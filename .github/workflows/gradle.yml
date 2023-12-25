@@ -20,7 +20,7 @@ jobs:
       - name: Container start
         run: docker-compose up &
       - name: Waiting for сontainer start
-        run: sleep 100
+        run: sleep 30
       - name: Start SUT
         run: java -jar ./artifacts/app-deadline.jar &
       - name: Build with Gradle
